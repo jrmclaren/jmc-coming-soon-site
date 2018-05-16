@@ -16,7 +16,6 @@
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server --browser='Google Chrome'",
     "start:local": "npm-run-all --parallel devserver watch:sass watch:js",
-    "heroku-postbuild": "npm-run-all build:css compile:js",
     "start": "node server/server.js",
     "start:development": "nodemon server/server.js",
     "compile:js": "npx babel --no-babelrc js/script.precomp.js --presets=es2015 --plugins transform-object-rest-spread  --out-file js/script.js",
