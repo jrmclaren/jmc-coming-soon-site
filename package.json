@@ -2,7 +2,9 @@
   "name": "jmc_coming_soon",
   "version": "1.0.0",
   "engines": {
-    "node": "10.0.0"
+    "node": "10.0.0",
+    "yarn": "0.22.0",
+    "npm": "5.6.0"
   },
   "description": "Website to announce that JMc website is coming soon (whenever soon is)",
   "main": "index.js",
