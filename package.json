@@ -1,6 +1,9 @@
 {
   "name": "jmc_coming_soon",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.0.0"
+  }
   "description": "Website to announce that JMc website is coming soon (whenever soon is)",
   "main": "index.js",
   "author": "Jason McLaren",
@@ -11,9 +14,10 @@
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server --browser='Google Chrome'",
     "start:local": "npm-run-all --parallel devserver watch:sass watch:js",
+    "heroku-postbuild": "npm-run-all build:css compile:js",
     "start": "node server/server.js",
     "start:development": "nodemon server/server.js",
-    "compile:js": "npx babel js/ --out-dir build/js/",
+    "compile:js": "npx babel --no-babelrc js/script.precomp.js --presets=es2015 --plugins transform-object-rest-spread  --out-file js/script.js",
     "webpack": "webpack",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
