@@ -198,6 +198,8 @@ a{
   background-repeat: no-repeat !important;
   background-position: center !important;
 
+  $icon-animation-duration: $transition-duration + 600ms;
+
   &--linkedin{
     background: url(../img/SVG/linkedin.svg);
   }
@@ -208,9 +210,8 @@ a{
     background: url(../img/SVG/instagram.svg);
   }
   &.transition{
-    animation: bloat $transition-duration $animation-easing;
+    animation: bloat $icon-animation-duration $animation-easing;
   }
-
 }
 @keyframes bloat {
   0%{
@@ -218,9 +219,6 @@ a{
   }
   50%{
     transform: translateY(5rem);
-  }
-  80%{
-    transform: translateY(2.5rem);
   }
   100%{
     transform: translateY(0);

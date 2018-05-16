@@ -150,14 +150,12 @@ a:link, a:visited {
   .icon--instagram {
     background: url(../img/SVG/instagram.svg); }
   .icon.transition {
-    animation: bloat 1s cubic-bezier(0.86, 0, 0.07, 1); }
+    animation: bloat 1.6s cubic-bezier(0.86, 0, 0.07, 1); }
 
 @keyframes bloat {
   0% {
     transform: translateY(0); }
   50% {
     transform: translateY(5rem); }
-  80% {
-    transform: translateY(2.5rem); }
   100% {
     transform: translateY(0); } }
