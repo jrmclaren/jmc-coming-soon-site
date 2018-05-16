@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "engines": {
     "node": "10.0.0"
-  }
+  },
   "description": "Website to announce that JMc website is coming soon (whenever soon is)",
   "main": "index.js",
   "author": "Jason McLaren",
