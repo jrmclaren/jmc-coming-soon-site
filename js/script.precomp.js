@@ -67,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         getPalette(){
             let randomNumber = Math.floor(Math.random() * this.palettes.length>>0);
-            console.log(`previous palette ${this.previousPalette}`);
             if( randomNumber !== this.previousPalette ){
                 this.previousPalette = randomNumber;
                 return this.palettes[randomNumber];
